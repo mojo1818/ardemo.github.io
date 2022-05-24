@@ -72,11 +72,11 @@
             <img crossorigin="anonymous" id="slpTexture" src="./demo/gas_furnace/slp99_texture.jpg">
         </a-assets>
 
-        <!--marker 1 pureair-->
+        <!--marker 1 s30-->
         <a-marker
             type="pattern" 
             preset = "custom" 
-            url='./demo/pureair/pureair.patt' 
+            url='./demo/icomfort/ic3.patt' 
             smooth="true"
             smoothCount="10"
             smoothTolerance="0.01"
@@ -88,7 +88,7 @@
         >
 
             <a-entity id="box1" gltf-model="./demo/rusty/scene.gltf"
-                scale="1 1 1"
+                scale="3 3 3"
                 position="0 -2 0"
                 rotation = "-90 0 0"
                 animation-mixer="loop: repeat"
@@ -98,11 +98,11 @@
             <!-- <a-entity id="snow" particle-system="preset: snow; velocityValue:0 2 0; particleCount: 10000"></a-entity> -->
         </a-marker>
  
-         <!--marker 2 s30-->
+         <!--marker 2 pureair-->
         <a-marker 
             type="pattern" 
             preset = "custom" 
-            url='./demo/icomfort/ic3.patt' 
+            url='./demo/pureair/pureair.patt' 
             videohandler 
             id="markerB" 
             smooth="true"
@@ -116,7 +116,7 @@
             </a-plane> -->
             <a-video
                 src="#pvid"
-                scale="2 2 2"
+                scale="5 5 5"
                 position="0 0 0"
                 rotation="-90 0 0"
                 autoplay
@@ -138,7 +138,7 @@
             emitevents="true"
             cursor="fuse: false; rayOrigin: mouse;">
 
-            <a-link class="clickable" href="https://resources.lennox.com/fileuploads/5ee9b044-fd28-466a-89a4-a961601e3b8720B05_DLSC_GasFurnaceCard_1021_CLEAN_v2.pdf" target="_blank" title="" image="" position="0 0 0" rotation="-67.42 0 0" scale="0.6 0.6 0.6" geometry="primitive:circle;segments:64"
+            <a-link class="clickable" href="https://resources.lennox.com/fileuploads/5ee9b044-fd28-466a-89a4-a961601e3b8720B05_DLSC_GasFurnaceCard_1021_CLEAN_v2.pdf" target="_blank" title="" image="" position="0 0 0" rotation="-67.42 0 0" scale="1 1 1" geometry="primitive:circle;segments:64"
                     material="shader:portal;side:double;visible:false" link="title:.">
                     <a-box scale="0.8 0.8 1.05" material="src:#slpTexture" position="-0.09854454977856898 -0.0036935886841299587 -0.2155814669584256" radius="2" segments-height="84" rotation="-23.450000000000003 0 0" geometry="">
                       <a-animation attribute="rotation" begin="mouseenter" loop="true" end="mouseleave" dur="2000" fill="backwards" to="335 360 360" ease="linear"></a-animation>
